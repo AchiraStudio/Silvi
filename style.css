@@ -63,10 +63,7 @@ header h1 {
     font-size: 5.5em;
     font-family: dance;
     transition: .5s;
-}
-
-header h1:hover {
-    font-size: 6.5em;
+    
 }
 
 header .title a {
@@ -78,6 +75,9 @@ header .title a {
     border-radius: 30px;
     transition: .4s;
     font-family: popins;
+    box-shadow: 0px 0px 70px -10px rgba(0,0,0,0.75);
+-webkit-box-shadow: 0px 0px 70px -10px rgba(0,0,0,0.75);
+-moz-box-shadow: 0px 0px 70px -10px rgba(0,0,0,0.75);
 }
 
 header .title a:hover {
@@ -114,11 +114,13 @@ header .title a:hover {
     background: #94702150;
     overflow: hidden;
     padding: 3.7rem;
+    padding-left: 9rem;
+    padding-right: 9rem;
 }
 
 /* Main Section */
 
-/* About */
+/* Home */
 .about {
     display: flex;
     justify-content: center;
@@ -179,6 +181,9 @@ header .title a:hover {
     height: auto;
     border-radius: 15px;
     transition: .4s;
+    box-shadow: 0px 0px 70px -10px rgba(0,0,0,0.75);
+-webkit-box-shadow: 0px 0px 70px -10px rgba(0,0,0,0.75);
+-moz-box-shadow: 0px 0px 70px -10px rgba(0,0,0,0.75);
 }
 
 .image img:hover {
@@ -228,6 +233,59 @@ header .title a:hover {
     z-index: 3;
 }
 
+.history {
+    padding-top: 5rem;
+    padding-bottom: 5rem;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 70vh;
+    width: 100%;
+}
+
+.tone {
+    margin-right: 40rem;
+    margin-top: 5rem;
+}
+
+.tone h2 {
+    font-family: beauty;
+}
+
+.ttwo {
+    padding-top: 8rem;
+    margin-left: 40rem;
+}
+
+.history #silvi {
+    position: absolute;
+    right: 0;
+    top: 0;
+    margin-top: 8rem;
+    margin-right: 28rem;
+    width: 400px;
+    border-radius: 15px;
+    box-shadow: 14px 15px 41px 0px rgba(0,0,0,0.75);
+-webkit-box-shadow: 14px 15px 41px 0px rgba(0,0,0,0.75);
+-moz-box-shadow: 14px 15px 41px 0px rgba(0,0,0,0.75);
+}
+
+.history #logo {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    margin-bottom: 2.8rem;
+    margin-left: 22rem;
+    box-shadow: -32px 15px 41px 0px rgba(0,0,0,0.75);
+-webkit-box-shadow: -32px 15px 41px 0px rgba(0,0,0,0.75);
+-moz-box-shadow: -32px 15px 41px 0px rgba(0,0,0,0.75);
+}
+
+.services h2 {
+    font-family: beauty;
+}
+
 main {
     padding: 20px;
 }
@@ -254,26 +312,85 @@ ul li {
 }
 
 /* Gallery */
-.gallery-img {
-    width: 250px;
+
+.gallery img {
+    padding: 10px;
+}
+#model {
+    width: 500px;
     height: auto;
-    margin: 10px;
-    border: 2px solid #ddd;
-    border-radius: 10px;
-    box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.2);
-    transition: transform 0.2s ease-in-out;
+    margin-bottom: 3.2rem;
 }
 
-.gallery-img:hover {
-    transform: scale(1.1);
-    border-color: #5c3c92;
+#nature {
+    width: 800px;
+    height: auto;
+}
+
+#wedding {
+    width: 650px;
+    height: auto;
 }
 
 /* Footer */
-footer {
-    background-color: #5c3c92;
-    color: #fff;
-    padding: 10px 0;
-    font-size: 0.9em;
-    margin-top: 20px;
-}
+.footer {
+    background-color: #aa9090; /* Dark background */
+    color: #f1f3f5; /* White text */
+    padding: 20px;
+    text-align: center;
+  }
+  
+  .footer-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 20px; /* Spacing between sections */
+  }
+  
+  .footer-container div {
+    flex: 1 1 auto; /* Flexible sections */
+    text-align: center;
+  }
+
+  .social {
+    margin-left: 15rem;
+  }
+  
+  .social-link {
+    text-decoration: none;
+    color: #fff; /* White text */
+    font-size: 16px;
+    display: flex;
+    align-items: center;
+    gap: 8px; /* Space between icon and text */
+    transition: color 0.3s ease;
+  }
+  
+  .social-link:hover {
+    color: #f39c12; /* Highlight color on hover */
+  }
+  
+  .social-icon {
+    width: 24px;
+    height: 24px;
+  }
+  
+  .location p {
+    font-size: 14px;
+  }
+
+  .location a {
+    text-decoration: none;
+    color: red;
+    transition: .6s;
+  }
+
+  .location a:hover {
+    font-size: larger;
+  }
+  
+  .copyright p {
+    font-size: 12px;
+    font-style: italic;
+  }
