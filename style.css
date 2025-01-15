@@ -1,0 +1,279 @@
+html {
+    scroll-behavior: smooth;
+}
+
+@font-face {
+    font-family: brety;
+    src: url(fonts/bretty-r.otf);
+}
+
+@font-face {
+    font-family: popins;
+    src: url(fonts/Poppins-Regular.ttf);
+}
+
+@font-face {
+    font-family: beauty;
+    src: url(fonts/PlaywriteAUSA-VariableFont_wght.ttf);
+}
+
+@font-face {
+    font-family: dance;
+    src: url(fonts/DancingScript-VariableFont_wght.ttf);
+}
+
+/* General styles */
+body {
+    font-family: 'Arial', sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    background-color: #f1f8f8;
+    color: #333;
+    text-align: center;
+}
+
+/* Header section */
+
+.header {
+    background: url(images/header.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    z-index: 5;
+}
+
+header {
+    background: transparent;
+    color: #fff;
+    padding: 20px;
+    height: 80vh;
+}
+
+header .title {
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    position: relative;
+}
+
+header h1 {
+    font-size: 5.5em;
+    font-family: dance;
+    transition: .5s;
+}
+
+header h1:hover {
+    font-size: 6.5em;
+}
+
+header .title a {
+    text-decoration: none;
+    background-color: #946f21;
+    color: white;
+    margin-top: 50px;
+    padding: 20px;
+    border-radius: 30px;
+    transition: .4s;
+    font-family: popins;
+}
+
+header .title a:hover {
+    padding: 30px;
+    font-size: larger;
+}
+
+/* Nav */
+
+.nav {
+    position: relative;
+    background: transparent;
+    backdrop-filter: blur(5px);
+    height: 20vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.nav a {
+    text-decoration: none;
+    font-size: 2rem;
+    font-family: beauty;
+    color: white;
+    padding-left: 9rem;
+    padding-right: 9rem;
+    transition: .4s;
+}
+
+.nav a:hover {
+    font-size: 2.6rem;
+    background: #94702150;
+    overflow: hidden;
+    padding: 3.7rem;
+}
+
+/* Main Section */
+
+/* About */
+.about {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    position: relative;
+    padding-top: 100px;
+    padding-bottom: 100px;
+    height: 50vh
+}
+
+.one {
+    position: absolute;
+    left: 0;
+    top: 0;
+    margin-top: 50px;
+    margin-left: 150px;
+}
+
+.two {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    margin-bottom: 50px;
+    margin-right: 150px;
+}
+
+.about h2 {
+    font-family: beauty;
+}
+
+.text {
+    width: 500px;
+}
+
+/* Images */
+
+.image {
+    position: absolute;
+    width: 900px;
+    display: flex;
+}
+
+#imgone {
+    top: 0;
+    right: 0;
+    margin-right: 100px;
+}
+#imgtwo {
+    bottom: 0;
+    left: 0;
+    margin-left: 100px;
+    margin-bottom: 350px;
+}
+
+.image img {
+    width: 400px;
+    height: auto;
+    border-radius: 15px;
+    transition: .4s;
+}
+
+.image img:hover {
+    width: 450px;
+    border-radius: 15px;
+    z-index: 4;
+}
+
+/* 1-3 */
+#one {
+    position: absolute;
+    right: 0;
+    margin-right: 250px;
+    margin-top: 20px;
+    transform: rotateY(180deg);
+}
+#two {
+    position: absolute;
+    left: 0;
+    transform: rotate(-8deg);
+}
+#three {
+    position: absolute;
+    right: 0;
+    transform: rotate(11deg);
+    margin-top: 50px;
+    z-index: 3;
+}
+
+/* 4-6 */
+#four {
+    position: absolute;
+    right: 0;
+    margin-right: 250px;
+    margin-top: 20px;
+}
+#five {
+    position: absolute;
+    left: 0;
+    transform: rotate(11deg);
+}
+#six {
+    position: absolute;
+    right: 0;
+    transform: rotate(-8deg);
+    margin-top: 50px;
+    z-index: 3;
+}
+
+main {
+    padding: 20px;
+}
+
+h2 {
+    color: #5c3c92;
+    margin: 20px 0 10px;
+}
+
+p {
+    margin: 10px 0;
+    font-size: 1.1em;
+}
+
+ul {
+    list-style-type: square;
+    padding: 0;
+    margin: 20px auto;
+}
+
+ul li {
+    margin: 5px 0;
+    font-size: 1.1em;
+}
+
+/* Gallery */
+.gallery-img {
+    width: 250px;
+    height: auto;
+    margin: 10px;
+    border: 2px solid #ddd;
+    border-radius: 10px;
+    box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.2);
+    transition: transform 0.2s ease-in-out;
+}
+
+.gallery-img:hover {
+    transform: scale(1.1);
+    border-color: #5c3c92;
+}
+
+/* Footer */
+footer {
+    background-color: #5c3c92;
+    color: #fff;
+    padding: 10px 0;
+    font-size: 0.9em;
+    margin-top: 20px;
+}
