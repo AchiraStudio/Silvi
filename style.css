@@ -37,6 +37,7 @@ body {
 
 .header {
     background: url(images/header.jpg);
+    background-attachment: fixed;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -312,6 +313,14 @@ ul li {
 }
 
 /* Gallery */
+
+.gallery {
+    padding-top: 6rem;
+}
+
+.gallery h2 {
+    font-family: beauty;
+}
 
 .gallery img {
     padding: 10px;

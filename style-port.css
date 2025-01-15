@@ -1,0 +1,133 @@
+@font-face {
+    font-family: brety;
+    src: url(fonts/bretty-r.otf);
+}
+
+@font-face {
+    font-family: popins;
+    src: url(fonts/Poppins-Regular.ttf);
+}
+
+@font-face {
+    font-family: beauty;
+    src: url(fonts/PlaywriteAUSA-VariableFont_wght.ttf);
+}
+
+@font-face {
+    font-family: dance;
+    src: url(fonts/DancingScript-VariableFont_wght.ttf);
+}
+
+* {
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.header {
+    background: url(images/bg-porto.jpg);
+    background-position: center;
+    background-size: cover;
+    height: 70vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-attachment: fixed;
+}
+
+.header .img {
+    background: transparent;
+    backdrop-filter: blur(5px);
+    height: 40vh;
+    width: 90%;
+    box-shadow: 15px 17px 52px -1px rgba(0,0,0,0.75);
+-webkit-box-shadow: 15px 17px 52px -1px rgba(0,0,0,0.75);
+-moz-box-shadow: 15px 17px 52px -1px rgba(0,0,0,0.75);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+
+.header .collection {
+    width: 500px;
+    height: 100%;
+    background: transparent;
+    position: absolute;
+}
+
+.header .left {
+    left: 0;
+}
+
+.header .right {
+    right: 0;
+}
+
+/* Pictures */
+
+#nature1 {
+    position: absolute;
+    width: 240px;
+    top: 0;
+    left: 0;
+    margin-left: 14px;
+    margin-top: 10px;
+}
+
+#event1 {
+    position: absolute;
+    width: 280px;
+    bottom: 0;
+    right: 0;
+    margin-right: 15px;
+    margin-bottom: 8px;
+}
+
+#wedding1 {
+    position: absolute;
+    width: 290px;
+    top: 0;
+    right: 0;
+    margin-top: 9px;
+    margin-right: 16px;
+}
+
+#custom1 {
+    position: absolute;
+    width: 280px;
+    bottom: 0;
+    left: 0;
+    margin-bottom: 14px;
+    margin-left: 4px;
+}
+
+.nav {
+    background-color: transparent;
+    height: 10vh;
+    width: 80%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    justify-content: space-evenly;
+    backdrop-filter: blur(5px);
+}
+
+.nav a {
+    text-decoration: none;
+    color: white;
+    font-family: dance;
+    text-shadow: 21px 5px 11px rgba(0,0,0,0.6);
+    font-size: 1.4rem;
+    transition: .4s all;
+}
+
+.nav a:hover {
+    font-size: 1.7rem;
+}
+
+.main {
+    width: 100%;
+    height: 100vh;
+}
