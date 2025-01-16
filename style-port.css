@@ -1,3 +1,11 @@
+html {
+    scroll-behavior: smooth;
+}
+
+::-webkit-scrollbar {
+    display: none;
+}
+
 @font-face {
     font-family: brety;
     src: url(fonts/bretty-r.otf);
@@ -21,6 +29,17 @@
 * {
     margin: 0;
     box-sizing: border-box;
+}
+
+.header #logo {
+    width: 300px;
+    height: auto;
+    transition: .4s;
+}
+
+.header #logo:hover {
+    width: 350px;
+    height: auto;
 }
 
 .header {
@@ -127,7 +146,265 @@
     font-size: 1.7rem;
 }
 
+/* Main Section */
+
 .main {
+    padding-top: 5rem;
     width: 100%;
-    height: 100vh;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    background: #eae8e8;
 }
+
+.main .container {
+    width: 350px;
+    height: 500px;
+    background-color: white;
+    margin: 30px;
+    border-radius: 20px;
+    box-shadow: 35px 25px 50px 1px rgba(0,0,0,0.75);
+    -webkit-box-shadow: 35px 25px 50px 1px rgba(0,0,0,0.75);
+    -moz-box-shadow: 35px 25px 50px 1px rgba(0,0,0,0.75);
+    transition: .5s all;
+    margin: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+.main .container h1 {
+    position: absolute;
+    top: 0;
+    font-family: beauty;
+    font-weight: 200;
+    font-size: 1.1rem;
+    margin-top: 20px;
+    text-decoration: underline;
+    color: white;
+}
+
+.main .container:hover {
+    width: 380px;
+    height: 530px;
+}
+
+.main .container .text {
+    width: 100%;
+    height: 100%;
+    z-index: 2;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.main .container .description {
+    padding-left: 50px;
+    padding-right: 50px;
+    font-family: popins;
+    font-weight: 150;
+    color: white;
+}
+
+.main .price {
+    margin-top: 40px;
+    font-family: dance;
+    font-size: 18px;
+}
+
+/* backgrounds */
+
+.main .container .bg {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+    overflow: hidden;
+    border-radius: 20px;
+}
+
+#wedding {
+    background: url(images/porto6.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    filter:blur(4px);
+    -o-filter:blur(4px);
+    -ms-filter:blur(4px);
+    -moz-filter:blur(4px);
+    -webkit-filter:blur(4px);
+}
+
+#custom {
+    background: url(images/porto9.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    filter:blur(4px);
+    -o-filter:blur(4px);
+    -ms-filter:blur(4px);
+    -moz-filter:blur(4px);
+    -webkit-filter:blur(4px);
+}
+
+#nature {
+    background: url(images/porto2.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    filter:blur(4px);
+    -o-filter:blur(4px);
+    -ms-filter:blur(4px);
+    -moz-filter:blur(4px);
+    -webkit-filter:blur(4px);
+}
+
+#event {
+    background: url(images/porto4.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    filter:blur(4px);
+    -o-filter:blur(4px);
+    -ms-filter:blur(4px);
+    -moz-filter:blur(4px);
+    -webkit-filter:blur(4px);
+}
+
+#portrait {
+    background: url(images/model.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    filter:blur(4px);
+    -o-filter:blur(4px);
+    -ms-filter:blur(4px);
+    -moz-filter:blur(4px);
+    -webkit-filter:blur(4px);
+}
+
+
+/* Add the overlay */
+#wedding::before, #custom::before, #nature::before, #event::before, #portrait::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.4); /* Adjust opacity to control the darkness */
+    border-radius: 20px; /* Match the border-radius of the parent */
+    z-index: 1; /* Ensure the overlay is on top of the background */
+}
+
+/* Table */
+
+.modern-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 20px 0;
+    font-size: 16px;
+    text-align: left;
+    background-color: #f9f9f9;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.modern-table thead {
+    background-color: #333;
+    color: #fff;
+}
+
+.modern-table th, .modern-table td {
+    padding: 15px;
+    border-bottom: 1px solid #ddd;
+}
+
+.modern-table td h1 {
+    font-size: 18px;
+    margin: 5px 0;
+}
+
+table th {
+    font-family: dance;
+}
+
+table h1 {
+    font-family: beauty;
+    font-size: 8px;
+}
+
+table td {
+    font-family: popins;
+}
+
+/* Footer */
+.footer {
+    background-color: #aa9090; /* Dark background */
+    color: #f1f3f5; /* White text */
+    padding: 20px;
+    text-align: center;
+  }
+  
+  .footer-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 20px; /* Spacing between sections */
+  }
+  
+  .footer-container div {
+    flex: 1 1 auto; /* Flexible sections */
+    text-align: center;
+  }
+
+  .social {
+    margin-left: 15rem;
+  }
+
+  .social img {
+    width: 24px;
+    height: auto;
+  }
+  
+  .social-link {
+    text-decoration: none;
+    color: #fff; /* White text */
+    font-size: 16px;
+    display: flex;
+    align-items: center;
+    gap: 8px; /* Space between icon and text */
+    transition: color 0.3s ease;
+  }
+  
+  .social-link:hover {
+    color: #f39c12; /* Highlight color on hover */
+  }
+  
+  .social-icon {
+    width: 24px;
+    height: 24px;
+  }
+  
+  .location p {
+    font-size: 14px;
+  }
+
+  .location a {
+    text-decoration: none;
+    color: red;
+    transition: .6s;
+  }
+
+  .location a:hover {
+    font-size: larger;
+  }
+  
+  .copyright p {
+    font-size: 12px;
+    font-style: italic;
+  }

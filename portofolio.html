@@ -16,7 +16,7 @@
             <a href="#">Custom</a>
         </div>
         <div class="img">
-            <img src="images/logo.png" alt="">
+            <img src="images/logo.png" alt="" id="logo" onclick="home()">
             <div class="collection left">
                 <img src="images/porto1.jpg" alt="" id="nature1">
                 <img src="images/porto3.jpg" alt="" id="event1">
@@ -29,8 +29,160 @@
     </section>
     <section class="main">
         <div class="container">
-            
+            <div class="bg" id="wedding"></div>
+            <div class="text">
+                <h1>Wedding Photos</h1>
+                    <div class="description">
+                        <ul>
+                            <li>Capturing timeless moments of your special day.</li>
+                            <li>Expertly composed candid and posed shots.</li>
+                            <li>Pre-wedding, ceremony, and reception coverage.</li>
+                            <li>High-quality prints and digital albums available.</li>
+                        </ul>
+                        <h2 class="price">Starting From: Rp. 400.000</h2>
+                </div>
+            </div>
         </div>
+        <div class="container">
+            <div class="bg" id="portrait"></div>
+            <div class="text">
+                <h1>Portrait Sessions</h1>
+                <div class="description">
+                    <ul>
+                        <li>Professional headshots for work and portfolios.</li>
+                        <li>Creative and personalized themes for individuals or families.</li>
+                        <li>Studio and outdoor session options available.</li>
+                        <li>High-resolution retouched images included.</li>
+                    </ul>
+                    <h2 class="price">Starting From: Rp. 600.000</h2>
+                </div>
+            </div>
+        </div>
+        <div class="container">
+            <div class="bg" id="nature"></div>
+            <div class="text">
+                <h1>Nature Photography</h1>
+                <div class="description">
+                    <ul>
+                        <li>Stunning landscapes captured in their natural beauty.</li>
+                        <li>Wildlife photography showcasing the animal kingdom.</li>
+                        <li>Seasonal collections highlighting changes in nature.</li>
+                        <li>Custom prints for home or office decor.</li>
+                    </ul>
+                    <h2 class="price">Starting From: Rp. 250.000</h2>
+                </div>
+            </div>
+        </div>
+        <div class="container">
+            <div class="bg" id="event"></div>
+            <div class="text">
+                <h1>Event Coverage</h1>
+                <div class="description">
+                    <ul>
+                        <li>Comprehensive coverage of corporate and social events.</li>
+                        <li>Quick turnaround for digital delivery.</li>
+                        <li>Detailed focus on key moments and highlights.</li>
+                        <li>Packages customizable to suit your event needs.</li>
+                    </ul>
+                    <h2 class="price">Starting From: Rp. 400.000</h2>
+                </div>
+            </div>
+        </div>
+        <div class="container">
+            <div class="bg" id="custom"></div>
+            <div class="text">
+                <h1>Custom</h1>
+                <div class="description">
+                    <ul>
+                        <li>Tailored photography services for unique projects.</li>
+                        <li>Collaborative planning to meet your vision.</li>
+                        <li>Specialized equipment for creative needs.</li>
+                        <li>Flexible packages designed around your preferences.</li>
+                    </ul>
+                    <h2 class="price">Starting From: Rp. 350.000</h2>
+                </div>
+            </div>
+        </div>
+        
+        <table class="modern-table">
+            <thead>
+                <tr>
+                    <th>Service</th>
+                    <th>Description</th>
+                    <th>Starting Price</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>
+                        <h1>Wedding Photos</h1>
+                    </td>
+                    <td>
+                        Timeless moments, candid and posed shots, and full event coverage with high-quality albums.
+                    </td>
+                    <td>Rp. 400.000</td>
+                </tr>
+                <tr>
+                    <td>
+                        <h1>Portrait Sessions</h1>
+                    </td>
+                    <td>
+                        Professional headshots, creative themes, and both studio and outdoor options.
+                    </td>
+                    <td>Rp. 600.000</td>
+                </tr>
+                <tr>
+                    <td>
+                        <h1>Nature Photography</h1>
+                    </td>
+                    <td>
+                        Captures of stunning landscapes, wildlife, and seasonal collections for decor.
+                    </td>
+                    <td>Rp. 250.000</td>
+                </tr>
+                <tr>
+                    <td>
+                        <h1>Event Coverage</h1>
+                    </td>
+                    <td>
+                        Comprehensive event coverage with quick delivery and customizable packages.
+                    </td>
+                    <td>Rp. 400.000</td>
+                </tr>
+                <tr>
+                    <td>
+                        <h1>Custom</h1>
+                    </td>
+                    <td>
+                        Tailored services, collaborative planning, and specialized equipment for unique needs.
+                    </td>
+                    <td>Rp. 350.000</td>
+                </tr>
+            </tbody>
+        </table>
     </section>
+
+    <footer class="footer">
+        <div class="footer-container">
+          <div class="social">
+            <a href="https://www.instagram.com/lovehannahphotography/" class="social-link">
+              <img src="images/instagram.png" alt="">
+              Instagram
+            </a>
+          </div>
+          <div class="location">
+            <p>📍 Location: <a href="">Look For Us!</a></p>
+          </div>
+          <div class="copyright">
+            <p>© 2024 Hannah's Photography. All rights reserved.</p>
+          </div>
+        </div>
+      </footer>
+
+    <script>
+        function home() {
+            window.location.href = "index.html"
+        }
+    </script>
 </body>
 </html>

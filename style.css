@@ -2,6 +2,11 @@ html {
     scroll-behavior: smooth;
 }
 
+::-webkit-scrollbar {
+    display: none;
+}
+
+
 @font-face {
     font-family: brety;
     src: url(fonts/bretty-r.otf);
@@ -60,8 +65,13 @@ header .title {
     position: relative;
 }
 
+header .title img {
+    width: 300px;
+    height: auto;
+}
+
 header h1 {
-    font-size: 5.5em;
+    font-size: 3.5em;
     font-family: dance;
     transition: .5s;
     
@@ -71,7 +81,7 @@ header .title a {
     text-decoration: none;
     background-color: #946f21;
     color: white;
-    margin-top: 50px;
+    margin-top: 10px;
     padding: 20px;
     border-radius: 30px;
     transition: .4s;
@@ -79,6 +89,7 @@ header .title a {
     box-shadow: 0px 0px 70px -10px rgba(0,0,0,0.75);
 -webkit-box-shadow: 0px 0px 70px -10px rgba(0,0,0,0.75);
 -moz-box-shadow: 0px 0px 70px -10px rgba(0,0,0,0.75);
+margin-bottom: 40px;
 }
 
 header .title a:hover {
@@ -112,7 +123,6 @@ header .title a:hover {
 
 .nav a:hover {
     font-size: 2.6rem;
-    background: #94702150;
     overflow: hidden;
     padding: 3.7rem;
     padding-left: 9rem;
@@ -168,17 +178,17 @@ header .title a:hover {
 #imgone {
     top: 0;
     right: 0;
-    margin-right: 100px;
+    margin-right: 50px;
 }
 #imgtwo {
     bottom: 0;
     left: 0;
-    margin-left: 100px;
+    margin-left: 50px;
     margin-bottom: 350px;
 }
 
 .image img {
-    width: 400px;
+    width: 290px;
     height: auto;
     border-radius: 15px;
     transition: .4s;
@@ -188,7 +198,7 @@ header .title a:hover {
 }
 
 .image img:hover {
-    width: 450px;
+    width: 300px;
     border-radius: 15px;
     z-index: 4;
 }
@@ -204,6 +214,7 @@ header .title a:hover {
 #two {
     position: absolute;
     left: 0;
+    margin-left: 140px;
     transform: rotate(-8deg);
 }
 #three {
@@ -233,6 +244,8 @@ header .title a:hover {
     margin-top: 50px;
     z-index: 3;
 }
+
+/* About Section */
 
 .history {
     padding-top: 5rem;
@@ -403,3 +416,158 @@ ul li {
     font-size: 12px;
     font-style: italic;
   }
+
+  .social img {
+    width: 24px;
+    height: auto;
+  }
+
+/* Media Screen (For other screen sizes) */
+
+@media screen and (max-width: 1441px) {
+
+    /* Header */
+    
+    header .title {
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        position: relative;
+    }
+    
+    header h1 {
+        font-size: 4.5em;
+        font-family: dance;
+        transition: .5s;
+        
+    }
+    
+    header .title a {
+        text-decoration: none;
+        background-color: #946f21;
+        color: white;
+        margin-top: 50px;
+        padding: 20px;
+        border-radius: 30px;
+        transition: .4s;
+        font-family: popins;
+        box-shadow: 0px 0px 70px -10px rgba(0,0,0,0.75);
+    -webkit-box-shadow: 0px 0px 70px -10px rgba(0,0,0,0.75);
+    -moz-box-shadow: 0px 0px 70px -10px rgba(0,0,0,0.75);
+    }
+    
+    header .title a:hover {
+        padding: 30px;
+        font-size: larger;
+    }
+    
+    /* Nav */
+    
+    .nav {
+        padding-top: 5rem;
+        position: relative;
+        background: transparent;
+        backdrop-filter: blur(5px);
+        height: 20vh;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        justify-content: space-evenly;
+    }
+    
+    .nav a {
+        text-decoration: none;
+        font-size: 2rem;
+        font-family: beauty;
+        color: white;
+        padding-left: 9rem;
+        padding-right: 9rem;
+        transition: .4s;
+    }
+    
+    .nav a:hover {
+        font-size: 2.6rem;
+        background: #94702150;
+        overflow: hidden;
+        padding: 3.7rem;
+        padding-left: 9rem;
+        padding-right: 9rem;
+    }
+    /* Images */
+
+.image {
+    position: absolute;
+    width: 900px;
+    display: flex;
+}
+
+#imgone {
+    top: 0;
+    right: 0;
+    margin-right: 50px;
+    margin-top: 50px;
+}
+#imgtwo {
+    bottom: 0;
+    left: 0;
+    margin-left: 50px;
+    margin-bottom: 290px;
+}
+
+.image img {
+    width: 270px;
+    height: auto;
+}
+
+.image img:hover {
+    width: 310px;
+    border-radius: 15px;
+    z-index: 4;
+}
+
+/* 1-3 */
+#one {
+    position: absolute;
+    right: 0;
+    margin-right: 250px;
+    margin-top: 20px;
+    transform: rotateY(180deg);
+}
+#two {
+    position: absolute;
+    left: 0;
+    margin-left: 240px;
+    transform: rotate(-8deg);
+}
+#three {
+    position: absolute;
+    right: 0;
+    transform: rotate(11deg);
+    margin-top: 50px;
+    z-index: 3;
+}
+
+/* 4-6 */
+#four {
+    position: absolute;
+    right: 0;
+    margin-right: 450px;
+    margin-top: 20px;
+}
+#five {
+    position: absolute;
+    left: 0;
+    transform: rotate(11deg);
+}
+#six {
+    position: absolute;
+    right: 0;
+    transform: rotate(-8deg);
+    margin-top: 50px;
+    z-index: 3;
+    margin-right: 300px;
+}
+}
