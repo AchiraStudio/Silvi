@@ -6,6 +6,10 @@ html {
     display: none;
 }
 
+* {
+    font-family: popins;
+}
+
 
 @font-face {
     font-family: brety;
@@ -36,6 +40,7 @@ body {
     background-color: #f1f8f8;
     color: #333;
     text-align: center;
+    overflow-x: hidden;
 }
 
 /* Header section */
@@ -54,6 +59,8 @@ header {
     color: #fff;
     padding: 20px;
     height: 80vh;
+    width: 100vw;
+    overflow-x: hidden;
 }
 
 header .title {
@@ -63,6 +70,7 @@ header .title {
     align-items: center;
     flex-direction: column;
     position: relative;
+    width: 100%;
 }
 
 header .title img {
@@ -79,7 +87,7 @@ header h1 {
 
 header .title a {
     text-decoration: none;
-    background-color: #946f21;
+    background-color: #9470212c;
     color: white;
     margin-top: 10px;
     padding: 20px;
@@ -109,6 +117,7 @@ header .title a:hover {
     justify-content: center;
     align-items: center;
     justify-content: space-evenly;
+    overflow-x: hidden;
 }
 
 .nav a {
@@ -140,7 +149,7 @@ header .title a:hover {
     position: relative;
     padding-top: 100px;
     padding-bottom: 100px;
-    height: 50vh
+    height: 50vh;
 }
 
 .one {
@@ -178,7 +187,7 @@ header .title a:hover {
 #imgone {
     top: 0;
     right: 0;
-    margin-right: 50px;
+    margin-right: 150px;
 }
 #imgtwo {
     bottom: 0;
@@ -188,7 +197,7 @@ header .title a:hover {
 }
 
 .image img {
-    width: 290px;
+    width: 390px;
     height: auto;
     border-radius: 15px;
     transition: .4s;
@@ -198,7 +207,7 @@ header .title a:hover {
 }
 
 .image img:hover {
-    width: 300px;
+    width: 500px;
     border-radius: 15px;
     z-index: 4;
 }
@@ -214,7 +223,7 @@ header .title a:hover {
 #two {
     position: absolute;
     left: 0;
-    margin-left: 140px;
+    margin-left: 20px;
     transform: rotate(-8deg);
 }
 #three {
@@ -254,8 +263,9 @@ header .title a:hover {
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 70vh;
-    width: 100%;
+    height: 90vh;
+    width: 100vw;
+    overflow-y: hidden;
 }
 
 .tone {
@@ -289,7 +299,7 @@ header .title a:hover {
     position: absolute;
     left: 0;
     bottom: 0;
-    margin-bottom: 2.8rem;
+    margin-bottom: 8.1rem;
     margin-left: 22rem;
     box-shadow: -32px 15px 41px 0px rgba(0,0,0,0.75);
 -webkit-box-shadow: -32px 15px 41px 0px rgba(0,0,0,0.75);
@@ -360,6 +370,7 @@ ul li {
     color: #f1f3f5; /* White text */
     padding: 20px;
     text-align: center;
+    overflow-x: hidden;
   }
   
   .footer-container {
@@ -424,9 +435,13 @@ ul li {
 
 /* Media Screen (For other screen sizes) */
 
-@media screen and (max-width: 1441px) {
+@media screen and (max-width: 1600px) {
 
     /* Header */
+
+    html {
+        overflow-x: hidden;
+    }
     
     header .title {
         height: 100%;
@@ -446,7 +461,7 @@ ul li {
     
     header .title a {
         text-decoration: none;
-        background-color: #946f21;
+        background-color: #9470212c;
         color: white;
         margin-top: 50px;
         padding: 20px;
@@ -466,7 +481,7 @@ ul li {
     /* Nav */
     
     .nav {
-        padding-top: 5rem;
+        padding-top: 0.1rem;
         position: relative;
         background: transparent;
         backdrop-filter: blur(5px);
@@ -476,6 +491,7 @@ ul li {
         justify-content: center;
         align-items: center;
         justify-content: space-evenly;
+        overflow-y: hidden;
     }
     
     .nav a {
@@ -570,4 +586,42 @@ ul li {
     z-index: 3;
     margin-right: 300px;
 }
+
+/* About */
+.history #silvi {
+    position: absolute;
+    right: 0;
+    top: 0;
+    margin-top: 3rem;
+    margin-right: 17rem;
+    width: 380px;
+    border-radius: 15px;
+    box-shadow: 14px 15px 41px 0px rgba(0,0,0,0.75);
+-webkit-box-shadow: 14px 15px 41px 0px rgba(0,0,0,0.75);
+-moz-box-shadow: 14px 15px 41px 0px rgba(0,0,0,0.75);
+}
+
+.history #logo {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    margin-bottom: 2.5rem;
+    margin-left: 18rem;
+    box-shadow: -32px 15px 41px 0px rgba(0,0,0,0.75);
+-webkit-box-shadow: -32px 15px 41px 0px rgba(0,0,0,0.75);
+-moz-box-shadow: -32px 15px 41px 0px rgba(0,0,0,0.75);
+}
+}
+
+@media screen and (max-width: 764px) {
+    .image img {
+        width: 210px;
+        height: auto;
+    }
+    
+    .image img:hover {
+        width: 310px;
+        border-radius: 15px;
+        z-index: 4;
+    }
 }

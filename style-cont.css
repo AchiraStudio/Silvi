@@ -1,0 +1,144 @@
+@font-face {
+    font-family: brety;
+    src: url(fonts/bretty-r.otf);
+}
+
+@font-face {
+    font-family: popins;
+    src: url(fonts/Poppins-Regular.ttf);
+}
+
+@font-face {
+    font-family: beauty;
+    src: url(fonts/PlaywriteAUSA-VariableFont_wght.ttf);
+}
+
+@font-face {
+    font-family: dance;
+    src: url(fonts/DancingScript-VariableFont_wght.ttf);
+}
+
+* {
+    margin: 0;
+    box-sizing: border-box;
+    font-family: popins;
+}
+
+::-webkit-scrollbar {
+    display: none;
+}
+
+header {
+    z-index: 4;
+    position: fixed;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: gainsboro;
+    backdrop-filter: blur(5px);
+    height: 100px;
+    justify-content: space-evenly;
+}
+
+.link {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 400px;
+    height: 100%;
+    justify-content: space-evenly;
+}
+
+.link a {
+    text-decoration: none;
+    font-size: 1.4rem;
+    color: white;
+    transition: .4s;
+}
+
+.link a:hover {
+    color: black;
+    font-size: 1.52rem;
+}
+
+header h1 {
+    font-family: beauty;
+    color: black;
+}
+
+main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+iframe {
+    border-radius: 50px;
+    box-shadow: 10px 10px 23px 0px rgba(0,0,0,0.75);
+-webkit-box-shadow: 10px 10px 23px 0px rgba(0,0,0,0.75);
+-moz-box-shadow: 10px 10px 23px 0px rgba(0,0,0,0.75);
+z-index: 2;
+}
+
+.location {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 70vw;
+    height: 100vh;
+    position: relative;
+}
+
+.bg {
+    background: url(images/porto8.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    filter: blur(5px);
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+}
+
+.location h1 {
+    padding: 50px;
+    z-index: 2;
+}
+
+.info {
+    text-align: center;
+    height: 100vh;
+    width: 30vw;
+    z-index: 2;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: -13px 0px 28px 0px rgba(0,0,0,0.75);
+-webkit-box-shadow: -13px 0px 28px 0px rgba(0,0,0,0.75);
+-moz-box-shadow: -13px 0px 28px 0px rgba(0,0,0,0.75);
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    border-radius: 20px;
+    height: 600px;
+    width: 400px;
+    padding: 20px;
+    position: relative;
+}
+
+.container h1 {
+    position: absolute;
+    top: 0;
+    margin-top: 80px;
+}
+
+.container p {
+    margin-top: 30px;
+}
